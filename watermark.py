@@ -24,7 +24,7 @@ with open(document, 'rb') as file:
         writer.addPage(image_page)
 
 directory, file_name = path.split(document)
-with open(path.join(directory, f'wtr_{file_name}'), 'wb') as fp:
+with open(path.join(directory, f'wtr-{file_name}'), 'wb') as fp:
     writer.write(fp)
 
 print("Sucessfully watermarked pdf document!")
